@@ -4,6 +4,7 @@ FROM gitpod/workspace-full
 
 # Install custom tools, runtime, etc.
 #RUN brew install fzf
+RUN sudo apt update && sudo apt upgrade -y
 
 # Install custom tools, runtime, etc.
 # base image only got `apt` as the package manager
