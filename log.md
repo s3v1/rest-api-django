@@ -49,3 +49,7 @@ Added [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli)
 Added [Pymarkdown](https://github.com/jackdewinter/pymarkdown)
 
 Updated .python-version to 3.12.7
+
+    uv sync
+
+Added check-json to precommit
