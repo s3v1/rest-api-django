@@ -53,3 +53,9 @@ Updated .python-version to 3.12.7
     uv sync
 
 Added check-json to precommit
+
+Added <https://github.com/pre-commit/sync-pre-commit-deps> to precommit
+
+Added this precommit service/app to github, runs precommit for me: <https://pre-commit.ci/>
+
+Updated .python-version to 3.13
