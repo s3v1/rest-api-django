@@ -59,3 +59,8 @@ Added <https://github.com/pre-commit/sync-pre-commit-deps> to precommit
 Added this precommit service/app to github, runs precommit for me: <https://pre-commit.ci/>
 
 Updated .python-version to 3.13
+
+Added action lint to precommit <https://github.com/rhysd/actionlint/blob/main/docs/usage.md#pre-commit>
+
+Added commitizen to pre-commit <https://github.com/commitizen-tools/commitizen>
+and <https://commitizen-tools.github.io/commitizen/getting_started/#integration-with-pre-commit>

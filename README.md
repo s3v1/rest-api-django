@@ -14,6 +14,8 @@ but here's the short version:
 Use pre-commit hooks:
 
     uv run pre-commit install
+    # extra command for commitizen
+    uv run pre-commit install --hook-type commit-msg --hook-type pre-push
 
 Run manually on git-staged files:
 
@@ -22,6 +24,10 @@ Run manually on git-staged files:
 Run manually on all files, not just the staged ones:
 
     uv run pre-commit run --all-files
+
+Update all the hooks to latest tags:
+
+    uv run pre-commit autoupdate
 
 ## uv
 
