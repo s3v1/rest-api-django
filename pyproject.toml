@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "A project that builds a Django based REST API from scratch"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pre-commit>=4.0.1",
+]
 
 [tool.uv]
 dev-dependencies = [

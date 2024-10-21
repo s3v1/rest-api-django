@@ -2,6 +2,27 @@
 
 This project is exploring making a REST API based on Django
 
+## pre-commit
+
+We use pre-commit to check several quality related things.
+
+[Install pre-commit instructions}(https://pre-commit.com/index.html#install),
+but here's the short version:
+
+    uv add pre-commit
+
+Use pre-commit hooks:
+
+    uv run pre-commit install
+
+Run manually on git-staged files:
+
+    uv run pre-commit run
+
+Run manually on all files, not just the staged ones:
+
+    uv run pre-commit run --all-files
+
 ## uv
 
 We use 'uv' to manage dependencies, virtual environments and python versions.
