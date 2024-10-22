@@ -64,3 +64,12 @@ Added action lint to precommit <https://github.com/rhysd/actionlint/blob/main/do
 
 Added commitizen to pre-commit <https://github.com/commitizen-tools/commitizen>
 and <https://commitizen-tools.github.io/commitizen/getting_started/#integration-with-pre-commit>
+
+Had a git push problem with commitizen:
+"fatal: ambiguous argument 'origin/HEAD..HEAD': unknown revision or path not in the working tree."
+Ran this to fix it:
+<https://github.com/commitizen-tools/commitizen/issues/593#issuecomment-1865930350>:
+
+    git remote set-head origin -a
+
+Configured pymarkdown in pyproject.toml to allow longer lines (MD013)

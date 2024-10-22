@@ -12,3 +12,9 @@ dependencies = [
 dev-dependencies = [
     "pre-commit>=4.0.1",
 ]
+
+[tool.pymarkdown]
+plugins.md013.enabled = true
+plugins.md013.line_length = 120
+plugins.md013.ignore_code_blocks = true
+extensions.front-matter.enabled = true
