@@ -73,3 +73,6 @@ Ran this to fix it:
     git remote set-head origin -a
 
 Configured pymarkdown in pyproject.toml to allow longer lines (MD013)
+
+Added gitlint <https://github.com/jorisroovers/gitlint>, to pre-commit. install instructions here: <https://jorisroovers.com/gitlint/latest/commit_hooks/#pre-commit>
+Removed gitlint again. very annoying rules
