@@ -78,3 +78,7 @@ Added gitlint <https://github.com/jorisroovers/gitlint>, to pre-commit. install 
 Removed gitlint again. very annoying rules
 
 Added a few more pre-commit hooks from: <https://medium.com/marvelous-mlops/welcome-to-pre-commit-heaven-5b622bb8ebce>
+
+Added PyCQA/bandit too: <https://github.com/PyCQA/bandit>
+
+Added     -   id: mixed-line-ending too

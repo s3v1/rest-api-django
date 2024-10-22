@@ -16,7 +16,7 @@ repos:
     -   id: check-yaml
     -   id: check-json
     -   id: check-added-large-files
-#    -   id: markdownlint/markdownlint
+    -   id: mixed-line-ending
 -   repo: https://github.com/crate-ci/typos
     rev: v1.26.0
     hooks:
@@ -39,3 +39,7 @@ repos:
       - id: commitizen
       - id: commitizen-branch
         stages: [pre-push]
+-   repo: https://github.com/PyCQA/bandit
+    rev: 1.7.10
+    hooks:
+      - id: bandit
