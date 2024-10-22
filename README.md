@@ -16,6 +16,8 @@ Use pre-commit hooks:
     uv run pre-commit install
     # extra command for commitizen
     uv run pre-commit install --hook-type commit-msg --hook-type pre-push
+    # extra command for gitlint
+    uv run pre-commit install --hook-type commit-msg
 
 Run manually on git-staged files:
 
