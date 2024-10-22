@@ -76,3 +76,5 @@ Configured pymarkdown in pyproject.toml to allow longer lines (MD013)
 
 Added gitlint <https://github.com/jorisroovers/gitlint>, to pre-commit. install instructions here: <https://jorisroovers.com/gitlint/latest/commit_hooks/#pre-commit>
 Removed gitlint again. very annoying rules
+
+Added a few more pre-commit hooks from: <https://medium.com/marvelous-mlops/welcome-to-pre-commit-heaven-5b622bb8ebce>
