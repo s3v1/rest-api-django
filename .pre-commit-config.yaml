@@ -54,3 +54,9 @@ repos:
     # Run the formatter.
     - id: ruff-format
       types_or: [ python, pyi ]
+-   repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+    -   id: shellcheck
+        types: [executable]
+        # files: ^bin/ # only if we need to limit it to the bin folder

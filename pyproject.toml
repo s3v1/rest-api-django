@@ -14,7 +14,5 @@ dev-dependencies = [
 ]
 
 [tool.pymarkdown]
-plugins.md013.enabled = true
-plugins.md013.line_length = 120
-plugins.md013.ignore_code_blocks = true
+plugins.md013.enabled = false
 extensions.front-matter.enabled = true
