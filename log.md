@@ -82,3 +82,5 @@ Added a few more pre-commit hooks from: <https://medium.com/marvelous-mlops/welc
 Added PyCQA/bandit too: <https://github.com/PyCQA/bandit>
 
 Added     -   id: mixed-line-ending too
+
+Added precommit for ruff: <https://github.com/astral-sh/ruff-pre-commit>
