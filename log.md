@@ -88,4 +88,4 @@ Added shellcheck precommit <https://github.com/shellcheck-py/shellcheck-py>
 
 Add shellcheck pre-commit <https://pre-commit.com/#filtering-files-with-types> and added filtering with types to get executables. Otherwise it will look for  *s.sh files only <https://pre-commit.com/#filtering-files-with-types>
 
-Added precommit hook for bashate <https://github.com/openstack/bashate> using <>
+Added precommit hook for bashate <https://github.com/openstack/bashate>
