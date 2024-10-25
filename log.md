@@ -111,3 +111,9 @@ made pytest accept options in pyproject.toml by using [tool.pytest.ini_options] 
 added github action for pytest
 
 fix: changed pytest to use importlib as importmode <https://docs.pytest.org/en/7.1.x/explanation/pythonpath.html>
+
+added pytest-watcher <https://pypi.org/project/pytest-watcher/>
+
+added pytest options --durations=5 and --last-failed
+
+added pytest-xdist and added slow test to simulate a workload of tests with slow integration tests

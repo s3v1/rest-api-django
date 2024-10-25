@@ -14,6 +14,8 @@ dev-dependencies = [
     "pre-commit>=4.0.1",
     "pytest>=8.3.3",
     "pytest-cov>=5.0.0",
+    "pytest-watcher>=0.4.3",
+    "pytest-xdist[psutil]>=3.6.1",
 ]
 
 [tool.pymarkdown]
@@ -22,7 +24,7 @@ extensions.front-matter.enabled = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80 --strict-markers --import-mode=importlib"
+addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80 --strict-markers --import-mode=importlib --durations=5 --last-failed -n logical"
 pythonpath = ["."]
 
 [tool.coverage.run]
