@@ -19,7 +19,7 @@ repos:
     -   id: mixed-line-ending
     -   id: debug-statements
 -   repo: https://github.com/crate-ci/typos
-    rev: v1.26.2
+    rev: v1.26.8
     hooks:
       - id: typos
 
@@ -54,7 +54,7 @@ repos:
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: v0.7.0
+  rev: v0.7.1
   hooks:
     # Run the linter.
     - id: ruff
@@ -88,6 +88,12 @@ repos:
       - id: mypy
 
 -   repo: https://github.com/jendrikseipp/vulture
-    rev: 'v2.3'  # or any later Vulture version
+    rev: 'v2.13'  # or any later Vulture version
     hooks:
       - id: vulture
+
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v3.19.0
+    hooks:
+    -   id: pyupgrade
+        args: [--py313-plus]
