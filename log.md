@@ -107,3 +107,5 @@ removed pytest precommithook. It will become slow over time and also doesn't wor
 added vulture precommit-hook: <https://github.com/jendrikseipp/vulture>
 
 made pytest accept options in pyproject.toml by using [tool.pytest.ini_options] header instead
+
+added github action for pytest
