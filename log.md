@@ -101,3 +101,7 @@ added pytest and pytest-cov
 made pytest work
 upgrade coverage and set limit of 80%
 configured bandit to ignore tests folder <https://bandit.readthedocs.io/en/latest/config.html>
+
+removed pytest precommithook. It will become slow over time and also doesn't work when runningin CI since it requires a full .venv
+
+added vulture precommit-hook: <https://github.com/jendrikseipp/vulture>
