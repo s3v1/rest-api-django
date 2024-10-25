@@ -109,3 +109,5 @@ added vulture precommit-hook: <https://github.com/jendrikseipp/vulture>
 made pytest accept options in pyproject.toml by using [tool.pytest.ini_options] header instead
 
 added github action for pytest
+
+fix: changed pytest to use importlib as importmode <https://docs.pytest.org/en/7.1.x/explanation/pythonpath.html>
