@@ -117,3 +117,5 @@ added pytest-watcher <https://pypi.org/project/pytest-watcher/>
 added pytest options --durations=5 and --last-failed
 
 added pytest-xdist and added slow test to simulate a workload of tests with slow integration tests
+
+added pyupgrade <https://github.com/asottile/pyupgrade>
