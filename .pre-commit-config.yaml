@@ -87,17 +87,7 @@ repos:
     hooks:
       - id: mypy
 
--  repo: local
-   hooks:
-   - id: pytest
-     name: pytest
-     entry: pytest -s -v --durations=5
-     language: system
-     pass_filenames: false
-   - id: pytest-cov
-     name: pytest-cov
-     language: system
-     entry: pytest -v --cov=. --cov-fail-under=80
-     types: [ python ]
-     pass_filenames: false
-     always_run: true
+-   repo: https://github.com/jendrikseipp/vulture
+    rev: 'v2.3'  # or any later Vulture version
+    hooks:
+      - id: vulture

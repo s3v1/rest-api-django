@@ -22,9 +22,14 @@ extensions.front-matter.enabled = true
 
 [tool.pytest]
 testpaths = ["tests"]
+addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80"
 
 [tool.coverage.run]
 omit = ["tests/*"]
 
 [tool.bandit]
 exclude_dirs = ["tests"]
+
+[tool.vulture]
+exclude = [".venv"]
+paths = ["."]
