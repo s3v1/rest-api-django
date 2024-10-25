@@ -5,14 +5,26 @@ description = "A project that builds a Django based REST API from scratch"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "pre-commit>=4.0.1",
+
 ]
 
 [tool.uv]
 dev-dependencies = [
+    "mypy>=1.13.0",
     "pre-commit>=4.0.1",
+    "pytest>=8.3.3",
+    "pytest-cov>=5.0.0",
 ]
 
 [tool.pymarkdown]
 plugins.md013.enabled = false
 extensions.front-matter.enabled = true
+
+[tool.pytest]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+omit = ["tests/*"]
+
+[tool.bandit]
+exclude_dirs = ["tests"]

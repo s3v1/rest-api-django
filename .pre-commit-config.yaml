@@ -19,7 +19,7 @@ repos:
     -   id: mixed-line-ending
     -   id: debug-statements
 -   repo: https://github.com/crate-ci/typos
-    rev: v1.26.0
+    rev: v1.26.2
     hooks:
       - id: typos
 
@@ -39,7 +39,7 @@ repos:
       - id: actionlint
 
 -   repo: https://github.com/commitizen-tools/commitizen
-    rev: v3.29.1
+    rev: v3.30.0
     hooks:
       - id: commitizen
       - id: commitizen-branch
@@ -49,6 +49,8 @@ repos:
     rev: 1.7.10
     hooks:
       - id: bandit
+        args: ["-c", "pyproject.toml"]
+        additional_dependencies: ["bandit[toml]"]
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
@@ -74,7 +76,28 @@ repos:
     hooks:
     -   id: bashate
         types: [executable]
+
 -   repo: https://github.com/asottile/pyupgrade
     rev: v3.19.0
     hooks:
     -   id: pyupgrade
+
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.13.0
+    hooks:
+      - id: mypy
+
+-  repo: local
+   hooks:
+   - id: pytest
+     name: pytest
+     entry: pytest -s -v --durations=5
+     language: system
+     pass_filenames: false
+   - id: pytest-cov
+     name: pytest-cov
+     language: system
+     entry: pytest -v --cov=. --cov-fail-under=80
+     types: [ python ]
+     pass_filenames: false
+     always_run: true

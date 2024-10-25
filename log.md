@@ -93,3 +93,11 @@ Added precommit hook for bashate <https://github.com/openstack/bashate>
 Added precommit hook for pyupgrade <https://github.com/asottile/pyupgrade>
 
 added debug-statements
+
+added my py
+
+added pytest and pytest-cov
+
+made pytest work
+upgrade coverage and set limit of 80%
+configured bandit to ignore tests folder
