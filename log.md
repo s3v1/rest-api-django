@@ -105,3 +105,5 @@ configured bandit to ignore tests folder <https://bandit.readthedocs.io/en/lates
 removed pytest precommithook. It will become slow over time and also doesn't work when runningin CI since it requires a full .venv
 
 added vulture precommit-hook: <https://github.com/jendrikseipp/vulture>
+
+made pytest accept options in pyproject.toml by using [tool.pytest.ini_options] header instead

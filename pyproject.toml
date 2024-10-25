@@ -20,9 +20,9 @@ dev-dependencies = [
 plugins.md013.enabled = false
 extensions.front-matter.enabled = true
 
-[tool.pytest]
+[tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80"
+addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80 --strict-markers"
 
 [tool.coverage.run]
 omit = ["tests/*"]
