@@ -22,7 +22,8 @@ extensions.front-matter.enabled = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80 --strict-markers"
+addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80 --strict-markers --import-mode=importlib"
+pythonpath = ["."]
 
 [tool.coverage.run]
 omit = ["tests/*"]
