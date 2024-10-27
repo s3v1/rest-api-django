@@ -123,3 +123,5 @@ added pyupgrade <https://github.com/asottile/pyupgrade>
 added checkmake precommit hook. <https://github.com/mrtazz/checkmake.git>
 
 added gitleaks <https://github.com/gitleaks/gitleaks>
+
+added talisman <https://github.com/thoughtworks/talisman?tab=readme-ov-file#pre-commit>
