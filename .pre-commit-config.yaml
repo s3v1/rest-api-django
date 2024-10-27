@@ -97,3 +97,9 @@ repos:
     hooks:
     -   id: pyupgrade
         args: [--py313-plus]
+
+repos:
+-   repo: https://github.com/mrtazz/checkmake.git
+    rev: 0.2.2
+    hooks:
+    -   id: checkmake
