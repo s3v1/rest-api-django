@@ -121,3 +121,5 @@ added pytest-xdist and added slow test to simulate a workload of tests with slow
 added pyupgrade <https://github.com/asottile/pyupgrade>
 
 added checkmake precommit hook. <https://github.com/mrtazz/checkmake.git>
+
+added gitleaks <https://github.com/gitleaks/gitleaks>

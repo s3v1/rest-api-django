@@ -102,3 +102,8 @@ repos:
     rev: 0.2.2
     hooks:
     -   id: checkmake
+
+-   repo: https://github.com/gitleaks/gitleaks
+    rev: v8.21.1
+    hooks:
+      - id: gitleaks
