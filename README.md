@@ -11,13 +11,9 @@ but here's the short version:
 
     uv add pre-commit
 
-Use pre-commit hooks:
+because we already set the "default_install_hook_types: [pre-commit, pre-push, commit-msg]" line in the config file, we just need to do this to let pre-commit install the git hooks:
 
     uv run pre-commit install
-    # extra command for commitizen
-    uv run pre-commit install --hook-type commit-msg --hook-type pre-push
-    # extra command for gitlint
-    uv run pre-commit install --hook-type commit-msg
 
 Run manually on git-staged files:
 
