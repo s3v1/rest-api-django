@@ -119,3 +119,5 @@ added pytest options --durations=5 and --last-failed
 added pytest-xdist and added slow test to simulate a workload of tests with slow integration tests
 
 added pyupgrade <https://github.com/asottile/pyupgrade>
+
+added checkmake precommit hook. <https://github.com/mrtazz/checkmake.git>
