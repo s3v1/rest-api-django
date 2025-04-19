@@ -22,7 +22,7 @@ Update all dependencies and store in lock file:
 
 ## pre-commit
 
-We use [pre-commit}(https://pre-commit.com) to check several quality related things.
+We use [pre-commit](https://pre-commit.com) to check several quality related things.
 
 It's already added, but if you want to know how here is how the install was done: "uv add pre-commit"
 and then we added the "default_install_hook_types: [pre-commit, pre-push, commit-msg]" line in the config file, we just need to do this ONE TIME to let pre-commit install the git hooks:
