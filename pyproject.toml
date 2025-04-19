@@ -4,9 +4,6 @@ version = "0.1.0"
 description = "A project that builds a Django based REST API from scratch"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [
-
-]
 
 [tool.uv]
 dev-dependencies = [
@@ -24,7 +21,7 @@ extensions.front-matter.enabled = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80 --strict-markers --import-mode=importlib --durations=5 --last-failed -n logical"
+#addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80 --strict-markers --import-mode=importlib --durations=5 --last-failed -n logical"
 pythonpath = ["."]
 
 [tool.coverage.run]
