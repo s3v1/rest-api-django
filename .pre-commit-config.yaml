@@ -22,8 +22,9 @@ repos:
     -   id: check-added-large-files
     -   id: mixed-line-ending
     -   id: debug-statements
+
 -   repo: https://github.com/crate-ci/typos
-    rev: v1
+    rev: 'v1.31.1'
     hooks:
       - id: typos
 
@@ -58,15 +59,15 @@ repos:
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: v0.11.5
+  rev: v0.11.6
   hooks:
     # Run the linter.
     - id: ruff
-      types_or: [ python, pyi ]
+      types_or: [ python ]
       args: [ --fix ]
     # Run the formatter.
     - id: ruff-format
-      types_or: [ python, pyi ]
+      types_or: [ python ]
 
 -   repo: https://github.com/shellcheck-py/shellcheck-py
     rev: v0.10.0.1
@@ -92,7 +93,7 @@ repos:
       - id: mypy
 
 -   repo: https://github.com/jendrikseipp/vulture
-    rev: 'v2.14'  # or any later Vulture version
+    rev: v2.14
     hooks:
       - id: vulture
 
@@ -113,7 +114,7 @@ repos:
       - id: gitleaks
 
 -   repo: https://github.com/thoughtworks/talisman
-    rev: 'v1.34.0'  # Update me!
+    rev: 'v1.32.2'
     hooks:
       # both pre-commit and pre-push supported
       # -   id: talisman-push
