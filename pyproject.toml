@@ -20,9 +20,18 @@ plugins.md013.enabled = false
 extensions.front-matter.enabled = true
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
-#addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80 --strict-markers --import-mode=importlib --durations=5 --last-failed -n logical"
 pythonpath = ["."]
+testpaths = ["tests"]
+addopts = """
+    --cov=.
+    --cov-report=term-missing
+    --cov-fail-under=80
+    --strict-markers
+    --import-mode=importlib
+    --durations=5
+    --last-failed
+    -n logical
+"""
 
 [tool.coverage.run]
 omit = ["tests/*"]
