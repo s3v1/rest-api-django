@@ -11,5 +11,7 @@
         "ms-python.python"
       ]
     }
-  }
+  },
+  "postCreateCommand": "uv run pre-commit install",
+  "postStartCommand": "uv run pre-commit run"
 }
