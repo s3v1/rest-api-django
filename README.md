@@ -1,6 +1,6 @@
 # REST API with Django
 
-This project is exploring making a REST API based on Django
+This project explores building a REST API using Django.
 
 ## uv
 
@@ -8,7 +8,7 @@ We use 'uv' to manage dependencies, virtual environments and python versions.
 
 [Installation instructions for 'uv' here](https://docs.astral.sh/uv/getting-started/installation/)
 
-Set .python-version to you desired version and 'uv' will handle it from there.
+Set .python-version to your desired version, and 'uv' will handle it from there.
 
 ### 'uv' commands
 
@@ -22,10 +22,10 @@ Update all dependencies and store in lock file:
 
 ## pre-commit
 
-We use [pre-commit](https://pre-commit.com) to check several quality related things.
+We use [pre-commit](https://pre-commit.com) to perform various code quality checks.
 
-It's already added, but if you want to know how here is how the install was done: "uv add pre-commit"
-and then we added the "default_install_hook_types: [pre-commit, pre-push, commit-msg]" line in the config file, we just need to do this ONE TIME to let pre-commit install the git hooks:
+It was installed via `uv add pre-commit`.
+We have already added the `default_install_hook_types: [pre-commit, pre-push, commit-msg]` line to the configuration file, so all you need to do to install the Git hooks, is to run:
 
     uv run pre-commit install
 
@@ -37,6 +37,6 @@ Run manually on all files, not just the staged ones:
 
     uv run pre-commit run --all-files
 
-Update all the hooks to latest tags once in a while:
+Periodically update hooks to their latest versions:
 
     uv run pre-commit autoupdate
