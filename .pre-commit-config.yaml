@@ -24,7 +24,7 @@ repos:
     -   id: debug-statements
 
 -   repo: https://github.com/crate-ci/typos
-    rev: 'v1.31.1'
+    rev: 'v1'
     hooks:
       - id: typos
 
@@ -44,7 +44,7 @@ repos:
       - id: actionlint
 
 -   repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.6.0
+    rev: v4.6.1
     hooks:
       - id: commitizen
       - id: commitizen-branch
@@ -59,7 +59,7 @@ repos:
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: v0.11.6
+  rev: v0.11.8
   hooks:
     # Run the linter.
     - id: ruff
@@ -109,12 +109,12 @@ repos:
     -   id: checkmake
 
 -   repo: https://github.com/gitleaks/gitleaks
-    rev: v8.24.3
+    rev: v8.25.1
     hooks:
       - id: gitleaks
 
 -   repo: https://github.com/thoughtworks/talisman
-    rev: 'v1.32.2'
+    rev: 'v1.37.0'
     hooks:
       # both pre-commit and pre-push supported
       # -   id: talisman-push
