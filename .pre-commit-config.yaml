@@ -24,7 +24,7 @@ repos:
     -   id: debug-statements
 
 -   repo: https://github.com/crate-ci/typos
-    rev: 'v1.31.1'
+    rev: 'v1'
     hooks:
       - id: typos
 
@@ -34,7 +34,7 @@ repos:
     - id: codespell
 
 -   repo: https://github.com/jackdewinter/pymarkdown
-    rev: v0.9.29
+    rev: v0.9.30
     hooks:
     -   id: pymarkdown
 
@@ -44,14 +44,14 @@ repos:
       - id: actionlint
 
 -   repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.6.0
+    rev: v4.8.3
     hooks:
       - id: commitizen
       - id: commitizen-branch
         stages: [pre-push]
 
 -   repo: https://github.com/PyCQA/bandit
-    rev: 1.8.3
+    rev: 1.8.6
     hooks:
       - id: bandit
         args: ["-c", "pyproject.toml"]
@@ -59,7 +59,7 @@ repos:
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: v0.11.6
+  rev: v0.12.2
   hooks:
     # Run the linter.
     - id: ruff
@@ -83,12 +83,12 @@ repos:
         types: [executable]
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.1
+    rev: v3.20.0
     hooks:
     -   id: pyupgrade
 
 -   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.15.0
+    rev: v1.16.1
     hooks:
       - id: mypy
 
@@ -98,7 +98,7 @@ repos:
       - id: vulture
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.1
+    rev: v3.20.0
     hooks:
     -   id: pyupgrade
         args: [--py313-plus]
@@ -109,12 +109,12 @@ repos:
     -   id: checkmake
 
 -   repo: https://github.com/gitleaks/gitleaks
-    rev: v8.24.3
+    rev: v8.27.2
     hooks:
       - id: gitleaks
 
 -   repo: https://github.com/thoughtworks/talisman
-    rev: 'v1.32.2'
+    rev: 'v1.37.0'
     hooks:
       # both pre-commit and pre-push supported
       # -   id: talisman-push
