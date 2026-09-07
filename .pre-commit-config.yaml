@@ -6,11 +6,11 @@ default_install_hook_types: [pre-commit, pre-push, commit-msg]
 
 repos:
 -   repo: https://github.com/mxr/sync-pre-commit-deps
-    rev: v0.0.3
+    rev: v0.0.5
     hooks:
     -   id: sync-pre-commit-deps
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
     -   id: check-ast
     -   id: check-toml
@@ -24,34 +24,34 @@ repos:
     -   id: debug-statements
 
 -   repo: https://github.com/crate-ci/typos
-    rev: 'v1.31.1'
+    rev: 'v1'
     hooks:
       - id: typos
 
 -   repo: https://github.com/codespell-project/codespell
-    rev: v2.4.1
+    rev: v2.4.3
     hooks:
     - id: codespell
 
 -   repo: https://github.com/jackdewinter/pymarkdown
-    rev: v0.9.29
+    rev: v0.9.39
     hooks:
     -   id: pymarkdown
 
 -   repo: https://github.com/rhysd/actionlint
-    rev: v1.7.7
+    rev: v1.7.12
     hooks:
       - id: actionlint
 
 -   repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.6.0
+    rev: v4.18.0
     hooks:
       - id: commitizen
       - id: commitizen-branch
         stages: [pre-push]
 
 -   repo: https://github.com/PyCQA/bandit
-    rev: 1.8.3
+    rev: 1.9.4
     hooks:
       - id: bandit
         args: ["-c", "pyproject.toml"]
@@ -59,7 +59,7 @@ repos:
 
 - repo: https://github.com/astral-sh/ruff-pre-commit
   # Ruff version.
-  rev: v0.11.6
+  rev: v0.16.6
   hooks:
     # Run the linter.
     - id: ruff
@@ -70,7 +70,7 @@ repos:
       types_or: [ python ]
 
 -   repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.10.0.1
+    rev: v0.11.0.1-1
     hooks:
     -   id: shellcheck
         types: [executable]
@@ -83,38 +83,38 @@ repos:
         types: [executable]
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.1
+    rev: v3.21.2
     hooks:
     -   id: pyupgrade
 
 -   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.15.0
+    rev: v2.3.1
     hooks:
       - id: mypy
 
 -   repo: https://github.com/jendrikseipp/vulture
-    rev: v2.14
+    rev: v2.16
     hooks:
       - id: vulture
 
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.19.1
+    rev: v3.21.2
     hooks:
     -   id: pyupgrade
         args: [--py313-plus]
 
 -   repo: https://github.com/mrtazz/checkmake.git
-    rev: 0.2.2
+    rev: v0.3.0
     hooks:
     -   id: checkmake
 
 -   repo: https://github.com/gitleaks/gitleaks
-    rev: v8.24.3
+    rev: v8.30.0
     hooks:
       - id: gitleaks
 
 -   repo: https://github.com/thoughtworks/talisman
-    rev: 'v1.32.2'
+    rev: 'v1.37.0'
     hooks:
       # both pre-commit and pre-push supported
       # -   id: talisman-push
