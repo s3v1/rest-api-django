@@ -1,4 +1,5 @@
 import pytest
+
 from app.fibonacci import fibonacci, fibonacci_sequence
 
 
